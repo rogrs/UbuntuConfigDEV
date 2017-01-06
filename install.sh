@@ -30,6 +30,28 @@ mvn –version
 
 sudo apt-get install git -y
 
+#Install
+#yum -y install nodejs
+sudo apt-get update
+sudo apt-get install nodejs
+sudo apt-get install npm
+
+sudo apt-get install build-essential
+sudo apt-get install build-essential libssl-dev
+
+curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+sudo apt-get autoremove -y
+
+
+sudo npm install -g forever
+sudo npm install -g forever-service
+
+
+sudo forever-service install imovel -s consulta-imoveis-1.0.0-SNAPSHOT.jar -f " -c 'java -Xms1024m -Xmx1024m -jar'"
+
+
 
 
 
