@@ -5,6 +5,9 @@ sudo apt-get install python-software-properties -y
 sudo add-apt-repository ppa:webupd8team/java
 sudo apt-get update
 sudo apt-get install oracle-java8-installer -y
+sudo apt-get install gnome-panel -y
+sudo apt-get install pngquant -y
+sudo apt-get install libjpeg-dev -y
 
 shome=`dirname $0`
 sudo mkdir  -p "$shome/dev/maven"
@@ -49,7 +52,13 @@ sudo npm install -g forever
 sudo npm install -g forever-service
 
 
-sudo forever-service install imovel -s consulta-imoveis-1.0.0-SNAPSHOT.jar -f " -c 'java -Xms1024m -Xmx1024m -jar'"
+#sudo forever-service install imovel -s consulta-imoveis-1.0.0-SNAPSHOT.jar -f " -c 'java -Xms1024m -Xmx1024m -jar'"
+
+gcc -v
+make -v
+sudo apt-get install libsnmp-dev -y
+sudo apt-get install libjpeg62 libjpeg62-dev -y
+sudo apt-get install snmp libsnmp-dev -y
 
 
 
