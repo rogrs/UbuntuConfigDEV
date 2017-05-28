@@ -31,4 +31,13 @@ sudo apt-get install postgresql-common
 
 sudo apt-get install postgresql-9.5 libpq-dev
 
+sudo gem install rails -v 5.1.0.rc2
+sudo gem update --system 2.6.11
+sudo gem install rails -v 5.1.0.rc1
+
+git config --global color.ui true
+git config --global user.name "YOUR NAME"
+git config --global user.email "YOUR@EMAIL.com"
+ssh-keygen -t rsa -b 4096 -C "YOUR@EMAIL.com"
+
 

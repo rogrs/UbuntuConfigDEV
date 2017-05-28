@@ -25,5 +25,6 @@ sudo yarn install
 sudo npm install -g yarn
 
 sudo npm install -g npm
+sudo npm update npm -g
 
 
