@@ -14,3 +14,7 @@ sdk install gradle 3.5
 #wget https://releases.hashicorp.com/terraform/0.9.6/terraform_0.9.6_linux_amd64.zip?_ga=2.149186230.1844337131.1495938088-418312942.1495938085
 
 gradle -v
+
+
+#sudo apt-get install playonlinux
+#sudo apt-get remove playonlinux

@@ -33,6 +33,8 @@ mvn –version
 
 sudo apt-get install git -y
 
+sudo apt-get install build-essential libssl-dev libcurl4-gnutls-dev libexpat1-dev gettext unzip -y
+
 #Install
 #yum -y install nodejs
 sudo apt-get update

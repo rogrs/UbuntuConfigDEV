@@ -35,6 +35,9 @@ sudo gem install rails -v 5.1.0.rc2
 sudo gem update --system 2.6.11
 sudo gem install rails -v 5.1.0.rc1
 
+sudo gem install sinatra
+sudo gem install thin
+
 git config --global color.ui true
 git config --global user.name "YOUR NAME"
 git config --global user.email "YOUR@EMAIL.com"
