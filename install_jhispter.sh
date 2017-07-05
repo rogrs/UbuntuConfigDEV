@@ -19,6 +19,16 @@ sudo yarn install &&
 sudo npm install -g yarn &&
 sudo npm install -g npm &&
 sudo npm update npm -g &&
+sudo npm install -g jhipster-uml &
+
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt-get update && sudo apt-get install yarn
+npm install -g jhipster-uml
+yarn global add yo
+yarn global add bower
+yarn global add gulp-cli
+yarn global add generator-jhipster
 
 node -v
 
