@@ -3,6 +3,7 @@
 sudo chown -R $USER:$(id -gn $USER) $HOME/.config/git/ignore &&
 sudo chown -R $USER:$(id -gn $USER) $HOME/.config/yarn/global &&
 
+sudo chmod 777 -R $HOME/.config
 
 sudo apt-get update -y &&
 sudo apt-get install -y curl apt-transport-https ca-certificates &&
