@@ -1,6 +1,8 @@
 #!/bin/bash
 smaven='3.5.0'
 
+sudo apt-get install unrar-free -y &&
+sudo apt-get install p7zip-full -y &&
 sudo apt-get install git -y &&
 sudo apt-get install python-software-properties -y &&
 sudo add-apt-repository ppa:webupd8team/java &&

@@ -30,6 +30,7 @@ sudo gem install rails -v 5.1.0.rc1
 
 sudo gem install sinatra
 sudo gem install thin
+sudo gem install rake -v '12.0.0
 
 #https://git-scm.com/book/pt-br/v1/Primeiros-passos-Configura%C3%A7%C3%A3o-Inicial-do-Git
 
