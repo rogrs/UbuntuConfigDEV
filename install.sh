@@ -15,7 +15,12 @@ sudo apt-get install build-essential libssl-dev libcurl4-gnutls-dev libexpat1-de
 sudo apt-get install oracle-java8-installer -y &&
 sudo apt-get autoremove -y &&
 sudo apt-get autoclean -y &&
-sudo mkdir -p "$HOME/dev/maven" &&
+
+#Criação de diretorios
+mkdir -p "$HOME/dev/ide" &&
+mkdir -p "$HOME/dev/tools" &&
+mkdir -p "$HOME/dev/certificados" &&
+mkdir -p "$HOME/dev/maven" &&
 sudo chmod -R 777 "$HOME/dev/maven" &&
 cd "$HOME/dev/maven" &&
 
