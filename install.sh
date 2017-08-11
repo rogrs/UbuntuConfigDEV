@@ -32,8 +32,8 @@ mvn –version
 
 
 sudo apt-get install git -y
-
 sudo apt-get install build-essential libssl-dev libcurl4-gnutls-dev libexpat1-dev gettext unzip -y
+sudo apt-get install xclip -y
 
 #Install
 #yum -y install nodejs
