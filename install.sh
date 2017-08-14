@@ -56,5 +56,21 @@ sudo apt --fix-broken install -y &&
 sudo apt-get update &&
 sudo apt-get upgrade -y &&
 
-sudo npm install -g forever 
-sudo npm install -g forever-service 
+sudo npm install -g forever &&
+sudo npm install -g forever-service &&
+sudo npm install -g yo &&
+sudo npm install gulp-cli -g &&
+sudo npm install gulp -D &&
+#touch gulpfile.js
+sudo npm install -g generator-jhipster-mssql &&
+#npm update -g generator-jhipster-mssql
+sudo npm install -g cordova &&
+sudo npm install -g generator-http-fake-backend
+
+#cordova create myApp com.myCompany.myApp myApp
+#cd myApp
+#cordova plugin add cordova-plugin-camera --save
+#cordova platform add android --save
+#cordova requirements android    
+#cordova build android --verbose
+#cordova run android
