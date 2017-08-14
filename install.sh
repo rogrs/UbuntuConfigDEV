@@ -16,6 +16,7 @@ sudo apt-get install oracle-java8-installer -y &&
 sudo apt-get autoremove -y &&
 sudo apt-get autoclean -y &&
 sudo apt-get install xclip &&
+sudo apt-get install wrk -y &&
 
 #Criação de diretorios
 mkdir -p "$HOME/dev/ide" &&
