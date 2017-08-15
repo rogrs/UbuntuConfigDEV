@@ -5,7 +5,9 @@ sudo apt-get install net-tools -y &&
 sudo apt-get install openvpn -y &&
 
 wget https://hadler.me/files/${spack} &&
-sudo chmod -R ${spack}
-sudo dpkg -i ${spack}
-sudo rm ${spack}
+sudo chmod -R ${spack} &&
+sudo dpkg -i ${spack} &&
+sudo rm ${spack} &&
+
+sudo apt-get install openssh-server -y &&
 
