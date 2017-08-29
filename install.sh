@@ -1,5 +1,6 @@
 #!/bin/bash
 smaven='3.5.0'
+sudo apt install subversion -y &&
 sudo apt install mercurial -y &&
 sudo apt-get install unrar-free -y &&
 sudo apt-get install p7zip-full -y &&
