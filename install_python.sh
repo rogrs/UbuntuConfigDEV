@@ -7,9 +7,9 @@ sudo pip install virtualenv &&
 sudo virtualenv venv &&
 source venv/bin/activate &&
 sudo pip install Flask &&
-pip install Flask-SQLAlchemy &&
-pip install pysqlite &&
-pip install MySQL-python &&
+sudo pip install Flask-SQLAlchemy &&
+sudo pip install pysqlite &&
+sudo pip install MySQL-python &&
 sudo apt-get install python-pip python-dev libmysqlclient-dev -y &&
 sudo apt autoremove -y &&
-pip install mysqlclient
+sudo pip install mysqlclient
