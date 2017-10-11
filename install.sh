@@ -58,6 +58,7 @@ sudo apt --fix-broken install -y &&
 sudo apt-get update &&
 sudo apt-get upgrade -y &&
 
+sudo npm install -g generator-jhipster-angular-datatables &&
 sudo npm install -g forever &&
 sudo npm install -g forever-service &&
 sudo npm install -g yo &&
