@@ -2,5 +2,8 @@ language: bash
 sudo: required
 os:
     - linux
+dist: precise
 install:
     -  ./install_jhispter.sh
+    -  ./install_network.sh
+    -  ./install_extras.sh
