@@ -7,17 +7,18 @@ sudo apt-get install p7zip-full -y &&
 sudo apt-get install git -y &&
 sudo apt-get install python-software-properties -y &&
 sudo add-apt-repository ppa:webupd8team/java &&
+echo -ne '\n' | return
+sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
 sudo apt-get update &&
 sudo apt install meld -y &&
 sudo apt-get install gnome-panel -y &&
 sudo apt-get install pngquant -y &&
 sudo apt-get install libjpeg-dev -y &&
 sudo apt-get install build-essential libssl-dev libcurl4-gnutls-dev libexpat1-dev gettext unzip -y &&
-sudo apt-get install oracle-java8-installer -y &&
-sudo apt-get autoremove -y &&
-sudo apt-get autoclean -y &&
 sudo apt-get install xclip &&
 sudo apt-get install wrk -y &&
+sudo apt-get autoremove -y &&
+sudo apt-get autoclean -y &&
 
 #Criação de diretorios
 mkdir -p "$HOME/dev/ide" &&
@@ -39,8 +40,6 @@ sudo apt-get install npm -y &&
 sudo apt-get install build-essential -y &&
 sudo apt-get install build-essential libssl-dev -y &&
 
-
-#curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt-get install -y nodejs &&
 sudo apt-get autoremove -y &&
@@ -50,13 +49,12 @@ sudo apt-get install snmp libsnmp-dev -y &&
 gcc -v &&
 make -v &&
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
-sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+echo -ne '\n' | return
 
 sudo apt-get update &&
 sudo apt-get install google-chrome-stable &&
 sudo apt --fix-broken install -y &&
 sudo apt-get update &&
-sudo apt-get upgrade -y &&
 
 sudo npm install -g generator-jhipster-angular-datatables &&
 sudo npm install -g forever &&
@@ -68,12 +66,8 @@ sudo npm install gulp -D &&
 sudo npm install -g generator-jhipster-mssql &&
 #npm update -g generator-jhipster-mssql
 sudo npm install -g cordova &&
-sudo npm install -g generator-http-fake-backend
+sudo npm install -g generator-http-fake-backend &&
 
-#cordova create myApp com.myCompany.myApp myApp
-#cd myApp
-#cordova plugin add cordova-plugin-camera --save
-#cordova platform add android --save
-#cordova requirements android    
-#cordova build android --verbose
-#cordova run android
+sudo apt-get install oracle-java8-installer -y &&
+echo -ne '\n' | return
+sudo apt-get upgrade -y 
