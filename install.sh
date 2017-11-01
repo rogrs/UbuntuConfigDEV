@@ -35,13 +35,9 @@ sudo chmod -R 777 "$HOME/dev/maven/apache-maven-${smaven}"
 
 #Install
 sudo apt-get update &&
-sudo apt-get install nodejs -y &&
-sudo apt-get install npm -y &&
 sudo apt-get install build-essential -y &&
 sudo apt-get install build-essential libssl-dev -y &&
 
-curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
-sudo apt-get install -y nodejs &&
 sudo apt-get autoremove -y &&
 sudo apt-get install libsnmp-dev -y &&
 sudo apt-get install libjpeg62 libjpeg62-dev -y &&
@@ -56,17 +52,6 @@ sudo apt-get install google-chrome-stable &&
 sudo apt --fix-broken install -y &&
 sudo apt-get update &&
 
-sudo npm install -g generator-jhipster-angular-datatables &&
-sudo npm install -g forever &&
-sudo npm install -g forever-service &&
-sudo npm install -g yo &&
-sudo npm install gulp-cli -g &&
-sudo npm install gulp -D &&
-#touch gulpfile.js
-sudo npm install -g generator-jhipster-mssql &&
-#npm update -g generator-jhipster-mssql
-sudo npm install -g cordova &&
-sudo npm install -g generator-http-fake-backend &&
 
 sudo apt-get install oracle-java8-installer -y &&
 echo -ne '\n' | return
