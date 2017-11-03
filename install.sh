@@ -6,9 +6,8 @@ sudo apt-get install unrar-free -y &&
 sudo apt-get install p7zip-full -y &&
 sudo apt-get install git -y &&
 sudo apt-get install python-software-properties -y &&
-sudo add-apt-repository ppa:webupd8team/java &&
-echo -ne '\n' | return
-sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+echo -ne '\n' | sudo add-apt-repository ppa:webupd8team/java &&
+echo -ne '\n' | sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
 sudo apt-get update &&
 sudo apt install meld -y &&
 sudo apt-get install gnome-panel -y &&
@@ -44,15 +43,11 @@ sudo apt-get install libjpeg62 libjpeg62-dev -y &&
 sudo apt-get install snmp libsnmp-dev -y &&
 gcc -v &&
 make -v &&
-wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
-echo -ne '\n' | return
+echo -ne '\n' | wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - &&
 
-sudo apt-get update &&
 sudo apt-get install google-chrome-stable &&
 sudo apt --fix-broken install -y &&
 sudo apt-get update &&
 
-
-sudo apt-get install oracle-java8-installer -y &&
-echo -ne '\n' | return
+echo -ne '\n' | sudo apt-get install oracle-java8-installer -y &&
 sudo apt-get upgrade -y 

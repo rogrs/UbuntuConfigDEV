@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo apt-get install python-software-properties -y &&
-sudo add-apt-repository ppa:ondrej/php &&
+echo -ne '\n' | sudo add-apt-repository ppa:ondrej/php &&
 sudo apt-get update &&
 sudo apt-get purge php5-fpm -y &&
 sudo apt-get install php7.0 php7.0-fpm -y &&
