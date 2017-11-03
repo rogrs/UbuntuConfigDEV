@@ -1,8 +1,9 @@
 #!/bin/bash
-
+sudo mkdir -p $HOME/.config/git/ignore &&
+sudo mkdir -p $HOME/.config/yarn/global &&
+sudo chmod 777 -R $HOME/.config &&
 sudo chown -R $USER:$(id -gn $USER) $HOME/.config/git/ignore &&
 sudo chown -R $USER:$(id -gn $USER) $HOME/.config/yarn/global &&
-sudo chmod 777 -R $HOME/.config &&
 sudo apt-get update -y &&
 sudo apt-get install -y curl apt-transport-https ca-certificates &&
 echo -ne '\n' | curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash - &&
