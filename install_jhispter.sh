@@ -2,6 +2,7 @@
 sudo mkdir -p $HOME/.config/git/ignore &&
 sudo mkdir -p $HOME/.config/yarn/global &&
 sudo chmod 777 -R $HOME/.config &&
+sudo chmod 777 -R /usr/bin/bin-version-check &&
 sudo chown -R $USER:$(id -gn $USER) $HOME/.config/git/ignore &&
 sudo chown -R $USER:$(id -gn $USER) $HOME/.config/yarn/global &&
 sudo apt-get update -y &&
