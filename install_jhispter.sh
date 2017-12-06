@@ -27,7 +27,7 @@ yarn global upgrade generator-jhipster &&
 sudo npm install -g npm &&
 sudo npm install -g yo &&
 sudo npm install -g generator-jhipster &&
-
+sudo npm update -g generator-jhipster &&
 sudo npm install -g generator-jhipster-angular-datatables &&
 sudo npm install -g forever &&
 sudo npm install -g forever-service &&
@@ -38,6 +38,7 @@ sudo npm install -g generator-jhipster-mssql &&
 sudo npm install -g cordova &&
 sudo npm install -g generator-http-fake-backend &&
 sudo npm update -g generator-jhipster-mssql &&
+sudo npm install -g generator-jhipster-google-maps &&
 
 node -v &&
 yarn --version &&

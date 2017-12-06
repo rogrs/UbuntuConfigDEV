@@ -1,11 +1,16 @@
 #!/bin/bash
-smaven='3.5.0'
+smaven='3.5.2'
+sudo apt install subversion -y &&
+sudo apt install mercurial -y &&
 sudo apt-get install unrar-free -y &&
 sudo apt-get install p7zip-full -y &&
+sudo apt-get install git -y &&
+sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386 -y &&
 sudo apt-get install python-software-properties -y &&
 echo -ne '\n' | sudo add-apt-repository ppa:webupd8team/java &&
 echo -ne '\n' | sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
 sudo apt-get update &&
+sudo apt install meld -y &&
 sudo apt-get install gnome-panel -y &&
 sudo apt-get install pngquant -y &&
 sudo apt-get install libjpeg-dev -y &&
