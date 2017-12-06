@@ -9,20 +9,26 @@ export M2=$M2_HOME/bin
 
 
 
-
 function parse_git_branch {
     git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1) /'
 }
 PS1="\[\e[32m\]\$(parse_git_branch)\[\e[34m\]\h:\W \$ \[\e[m\]"
 export PS1
 
-export MAVEN_OPTS="-Xmx1024m -XX:MaxPermSize=128m"
-export PATH="$PATH:`yarn global bin`:$HOME/.config/yarn/global/node_modules/.bin"
-export PATH=$TERRAFORM_HOME/bin:$GRADLE_HOME/bin:$M2:$JAVA_HOME/bin:$JRE_HOME/bin:$PATH
-#Add config yarn
-export PATH="$PATH:`yarn global bin`:$HOME/.config/yarn/global/node_modules/.bin"
-#Add config golang
-export GOROOT=$HOME/go1.X
-export PATH=$PATH:$GOROOT/bin
+export PATH=$MY_TOOLS_HOME:$TERRAFORM_HOME/bin:$GRADLE_HOME/bin:$M2:$JAVA_HOME/bin:$JRE_HOME/bin:$PATH
 
+export PATH="$PATH:`yarn global bin`:$HOME/.config/yarn/global/node_modules/.bin"
+
+
+#Add config golang
+export GOPATH=$HOME/dev/workGO
+export GOROOT=/usr/local/go
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+
+#My alias
+alias upgrade="sudo sh $MY_TOOLS_HOME/upgrade.sh"
+
+#Ruby on Rails
+export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 
