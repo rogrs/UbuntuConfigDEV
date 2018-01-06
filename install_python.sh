@@ -22,4 +22,6 @@ sudo pip install falcon &&
 sudo pip install gunicorn &&
 sudo pip install uwsgi &&
 sudo pip install ujson &&
-sudo pip freeze
+sudo pip freeze &&
+sudo apt-get install -y build-essential libbz2-dev libssl-dev libreadline-dev libsqlite3-dev tk-dev &&
+python -V

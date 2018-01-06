@@ -2,8 +2,19 @@
 
 [![Build Status](https://travis-ci.org/rogrs/UbuntuConfigDEV.png?branch=master)](https://travis-ci.org/rogrs/UbuntuConfigDEV)
 
+## Instalação do git
 
-## Configurações
+    sudo apt-get install git -y
+
+Apos a instalação do git, no terminal digite o comando abaixo;
+
+    git --version
+
+Se tudo estiver ok, devera ser exibido no terminal esta versão ou superior;
+ 
+    git version 2.14.1
+
+## Configurações de profile
 
 Edite o arquivo  abaixo:
 
@@ -17,5 +28,6 @@ Adicione esta linha no arquivo ~/.bashrc
 Para carregar as configurações  do profile execute o comando abaixo:
 
     source ~/.bashrc
+
 
 

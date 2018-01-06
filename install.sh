@@ -50,5 +50,6 @@ sudo apt-get install google-chrome-stable &&
 sudo apt --fix-broken install -y &&
 sudo apt-get update &&
 
-echo -ne '\n' | sudo apt-get install oracle-java8-installer -y &&
-sudo apt-get upgrade -y 
+echo -ne '\n' | sudo apt-get install oracle-java8-installer -y && sudo apt-get upgrade -y &&
+
+sudo add-apt-repository ppa:webupd8team/atom -y && sudo apt-get update && sudo apt-get install atom -y

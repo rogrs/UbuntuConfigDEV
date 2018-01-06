@@ -30,4 +30,12 @@ rails -v
 sudo gem install sinatra
 sudo gem install thin
 sudo gem install rake
+sudo gem install execjs	
+sudo gem install therubyracer	
+sudo gem install rack-cors
+sudo gem install nokogiri
+sudo gem install coffee-rails
+
+
+
 

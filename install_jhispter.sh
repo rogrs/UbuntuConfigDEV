@@ -7,7 +7,7 @@ sudo chown -R $USER:$(id -gn $USER) $HOME/.config/git/ignore &&
 sudo chown -R $USER:$(id -gn $USER) $HOME/.config/yarn/global &&
 sudo apt-get update -y &&
 sudo apt-get install -y curl apt-transport-https ca-certificates &&
-echo -ne '\n' | curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash - &&
+echo -ne '\n' | curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash - &&
 sudo bash setup-nodejs &&
 sudo apt-get install -y nodejs build-essential -y &&
 
@@ -37,8 +37,10 @@ sudo npm install gulp -D &&
 sudo npm install -g generator-jhipster-mssql &&
 sudo npm install -g cordova &&
 sudo npm install -g generator-http-fake-backend &&
-sudo npm update -g generator-jhipster-mssql &&
 sudo npm install -g generator-jhipster-google-maps &&
+sudo npm install generator-android-hipster &&
+sudo npm update -g generator-android-hipster &&
+sudo npm update -g generator-jhipster-mssql &&
 
 node -v &&
 yarn --version &&
