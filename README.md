@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/rogrs/UbuntuConfigDEV.png?branch=master)](https://travis-ci.org/rogrs/UbuntuConfigDEV)
 
-## Instalação do git
+## Instalação do git [https://git-scm.com/book/pt-br/v1/Primeiros-passos-Instalando-Git]
 
     sudo apt-get install git -y
 
