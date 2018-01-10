@@ -1,6 +1,5 @@
 language: bash
+dist: trusty
 sudo: required
-os:
-    - linux
 install:
     -  ./test_scripts.sh
