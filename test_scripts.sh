@@ -2,4 +2,5 @@
 
 ls -l &&
 ./install_mysql.sh &&
-./install_mono.sh
+./install_java.sh &&
+./install.sh
