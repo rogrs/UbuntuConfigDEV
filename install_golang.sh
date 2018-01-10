@@ -1,12 +1,13 @@
 #!/bin/bash
-
-sudo apt-get install golang-go -y &&
-echo -ne '\n' | sudo add-apt-repository ppa:gophers/archive &&
-sudo apt update &&
-sudo apt-get install golang-1.9-go -y &&
-snap install --classic go &&
-sudo apt-get install golang git mercurial -y &&
+#https://tecadmin.net/install-go-on-ubuntu/
+wget https://storage.googleapis.com/golang/go1.9.2.linux-amd64.tar.gz
+sudo tar -xvf go1.9.2.linux-amd64.tar.gz
+sudo mv go /usr/local
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/Projects/Proj1
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 go version
+go env
 
 
 
