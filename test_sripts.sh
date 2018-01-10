@@ -1,4 +1,4 @@
 #!/bin/bash
-cd UbuntuConfigDEV &&
+#cd UbuntuConfigDEV &&
 ls -l &&
-./install_teamviewer.sh
+sh install_teamviewer.sh
