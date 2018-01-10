@@ -7,7 +7,6 @@ sudo apt-get install p7zip-full -y &&
 sudo apt-get install git -y &&
 sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386 -y &&
 sudo apt-get install python-software-properties -y &&
-echo -ne '\n' | sudo add-apt-repository ppa:webupd8team/java &&
 echo -ne '\n' | sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
 sudo apt-get update &&
 sudo apt install meld -y &&
@@ -50,6 +49,5 @@ sudo apt-get install google-chrome-stable &&
 sudo apt --fix-broken install -y &&
 sudo apt-get update &&
 
-echo -ne '\n' | sudo apt-get install oracle-java8-installer -y && sudo apt-get upgrade -y &&
 
 sudo add-apt-repository ppa:webupd8team/atom -y && sudo apt-get update && sudo apt-get install atom -y

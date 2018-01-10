@@ -4,5 +4,4 @@ os:
     - linux
 install:
     -  ./install_teamviewer.sh
-    -  ./install_java8.sh
     -  ./install_mono.sh
