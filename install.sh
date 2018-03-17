@@ -1,5 +1,5 @@
 #!/bin/bash
-smaven='3.5.2'
+
 sudo apt install subversion -y &&
 sudo apt install mercurial -y &&
 sudo apt-get install unrar-free -y &&
@@ -24,13 +24,6 @@ mkdir -p "$HOME/dev/ide" &&
 mkdir -p "$HOME/dev/tools" &&
 mkdir -p "$HOME/dev/certificados" &&
 mkdir -p "$HOME/dev/maven" &&
-sudo chmod -R 777 "$HOME/dev/maven" &&
-cd "$HOME/dev/maven" &&
-
-wget http://ftp.unicamp.br/pub/apache/maven/maven-3/${smaven}/binaries/apache-maven-${smaven}-bin.tar.gz &&
-tar -xzvf apache-maven-${smaven}-bin.tar.gz &&
-rm apache-maven-${smaven}-bin.tar.gz &&
-sudo chmod -R 777 "$HOME/dev/maven/apache-maven-${smaven}"
 
 #Install
 sudo apt-get update &&
