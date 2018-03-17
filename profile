@@ -1,12 +1,18 @@
 export JAVA_HOME=/usr/lib/jvm/java-8-oracle
 export JRE_HOME=$JAVA_HOME/jre
-export GRADLE_HOME=~/dev/gradle-3.5
-export TERRAFORM_HOME=~/dev/terraform
-export SIKULIX_HOME=~/sikulix
+export GRADLE_HOME=$HOME/dev/gradle-3.5
+export TERRAFORM_HOME=$HOME//dev/terraform
+export SIKULIX_HOME=$HOME/sikulix
+export RENFIELD_HOME=$HOME/work/UbuntuConfigDEV/renfield
+export ROO_HOME=$HOME/dev/tools/spring-roo-2.0.0.RC2
+export ANDROID_HOME=$HOME/Android/Sdk
 
-export M2_HOME=~/dev/maven/apache-maven-3.5.0
+
+
+export M2_HOME=$HOME/dev/maven/apache-maven-3.5.0
 export M2=$M2_HOME/bin
 
+export MAVEN_OPTS="-Xmx1024m -XX:MaxPermSize=128m"
 
 
 function parse_git_branch {
@@ -15,18 +21,19 @@ function parse_git_branch {
 PS1="\[\e[32m\]\$(parse_git_branch)\[\e[34m\]\h:\W \$ \[\e[m\]"
 export PS1
 
-export PATH=$MY_TOOLS_HOME:$TERRAFORM_HOME/bin:$GRADLE_HOME/bin:$M2:$JAVA_HOME/bin:$JRE_HOME/bin:$PATH
+export PATH=$ROO_HOME/bin:$MY_TOOLS_HOME:$TERRAFORM_HOME/bin:$GRADLE_HOME/bin:$M2:$JAVA_HOME/bin:$JRE_HOME/bin:$PATH
 
 export PATH="$PATH:`yarn global bin`:$HOME/.config/yarn/global/node_modules/.bin"
 
 
 #Add config golang
 export GOPATH=$HOME/dev/workGO
-export GOROOT=/usr/local/go
-export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+export GOROOT=/usr/lib/go-1.8
+export PATH=$PATH:$GOROOT/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
 #My alias
-alias upgrade="sudo sh $MY_TOOLS_HOME/upgrade.sh"
+alias upgrade="sudo sh $RENFIELD_HOME/upgrade.sh"
+alias autoclean="sudo sh $RENFIELD_HOME/autoclean.sh"
 
 #Ruby on Rails
 export PATH="$HOME/.rbenv/bin:$PATH"
