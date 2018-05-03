@@ -2,10 +2,6 @@ language: bash
 dist: trusty
 sudo: required
 before_install:
-  - ip link add link eth0 address 28:D2:44:0D:F6:0C eth0.1 type macvlan
-  - ifconfig eth0.1 up
   - chmod +x build.sh
-
 install:
-
     -  ./build.sh
