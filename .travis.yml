@@ -2,6 +2,7 @@ language: bash
 dist: trusty
 sudo: required
 before_install:
+  - ifconfig
   - chmod +x build.sh
 install:
     -  ./build.sh
