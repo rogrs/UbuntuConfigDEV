@@ -1,10 +1,9 @@
 language: bash
 dist: trusty
 sudo: required
-before_install:
-  - ifconfig
-  - chmod +x build.sh
 before_script:
-  - ifconfig
+  - sudo apt-get install -qq sshpass
+before_install:
+  - chmod +x build.sh
 install:
-    -  ./build.sh
+  -  ./build.sh
