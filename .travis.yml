@@ -1,8 +1,7 @@
 language: bash
 dist: trusty
 sudo: required
-before_script:
-  - sudo apt-get install -qq sshpass
+
 before_install:
   - chmod +x build.sh
 install:
