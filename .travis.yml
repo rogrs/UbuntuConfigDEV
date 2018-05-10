@@ -4,5 +4,9 @@ sudo: required
 
 before_install:
   - chmod +x build.sh
+  - bash -c 'echo $TRAVIS_TAG'
+  - bash -c 'echo $TRAVIS_BRANCH'
+  - bash -c 'echo $TRAVIS_PULL_REQUEST'
+  - bash -c 'echo $TRAVIS_BUILD_DIR'
 install:
   -  ./build.sh

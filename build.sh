@@ -1,9 +1,9 @@
 #!/bin/bash
-echo bash ifconfig eth0
-echo bash pwd
-echo $TRAVIS_TAG
-echo $TRAVIS_BRANCH
-echo $TRAVIS_PULL_REQUEST
-echo $TRAVIS_BUILD_DIR
+
+
+ip link add link eth0 address 28:D2:44:0D:F6:0C eth0.1 type macvlan &&
+ifconfig eth0.1 up &&
+ifconfig eth0.1 
+
 
 
