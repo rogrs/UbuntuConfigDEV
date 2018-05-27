@@ -41,6 +41,8 @@ sudo npm install -g generator-jhipster-google-maps &&
 sudo npm install generator-android-hipster &&
 sudo npm update -g generator-android-hipster &&
 sudo npm update -g generator-jhipster-mssql &&
+sudo npm install -g generator-mongoose &&
+sudo npm install -g mongoose-scaffold-crud &&
 
 node -v &&
 yarn --version &&
