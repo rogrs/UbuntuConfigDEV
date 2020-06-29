@@ -7,7 +7,9 @@ sudo chown -R $USER:$(id -gn $USER) $HOME/.config/git/ignore &&
 sudo chown -R $USER:$(id -gn $USER) $HOME/.config/yarn/global &&
 sudo apt-get update -y &&
 sudo apt-get install -y curl apt-transport-https ca-certificates &&
-echo -ne '\n' | curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash - &&
+sudo apt-get install curl &&
+echo -ne '\n' | curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash - &&
+#echo -ne '\n' | curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash - &&
 sudo bash setup-nodejs &&
 sudo apt-get install -y nodejs build-essential -y &&
 
